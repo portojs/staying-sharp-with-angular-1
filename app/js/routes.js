@@ -6,6 +6,11 @@ angular.module('NoteWrangler')
                 controller: 'NotesIndexController',
                 controllerAs: 'indexController'
             })
+            .when('/notes/:id', {
+                templateUrl: '/template/pages/notes/show.html',
+                controller: 'NotesShowController',
+                controllerAs: 'showController'
+            })
             .when('/users', {
                 templateUrl: '/template/pages/users/index.html'
             })
